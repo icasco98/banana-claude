@@ -25,6 +25,7 @@ Unlike simple API wrappers, Claude interprets your intent, selects domain expert
 - [The 5-Component Prompt Formula](#the-5-component-prompt-formula)
 - [Domain Modes](#domain-modes)
 - [Models](#models)
+- [Environment Variables](#environment-variables)
 - [Architecture](#architecture)
 - [Requirements](#requirements)
 - [Changelog](CHANGELOG.md)
@@ -170,6 +171,14 @@ Instead of sending "a cat in space" to Gemini, Claude constructs:
 |-------|----|-------|
 | Flash 3.1 (default) | `gemini-3.1-flash-image-preview` | Fastest, newest, 14 aspect ratios, up to 4K |
 | Flash 2.5 | `gemini-2.5-flash-image` | Stable fallback |
+
+## Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `GOOGLE_AI_API_KEY` | Yes | API key from [Google AI Studio](https://aistudio.google.com/apikey). Set automatically by `/banana setup` or `install.sh --with-mcp`. |
+| `GOOGLE_API_KEY` | No | Fallback used by the direct-API scripts (`generate.py`, `edit.py`) if `GOOGLE_AI_API_KEY` is not set. |
+| `NANOBANANA_MODEL` | No | Overrides the default model. Defaults to `gemini-3.1-flash-image-preview`. |
 
 ## Architecture
 

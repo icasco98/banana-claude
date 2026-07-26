@@ -93,6 +93,7 @@ Reset session context and conversation history.
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `GOOGLE_AI_API_KEY` | Yes | API key from https://aistudio.google.com/apikey |
+| `GOOGLE_API_KEY` | No | Fallback read by `generate.py`/`edit.py` when `GOOGLE_AI_API_KEY` is unset |
 | `NANOBANANA_MODEL` | No | Override default model (default: `gemini-3.1-flash-image-preview`) |
 
 ## Output Directory
