@@ -1,0 +1,8 @@
+{
+  "extraKnownMarketplaces": {
+    "nano-banana": {
+      "source": { "source": "github", "repo": "icasco98/nano-banana-claude-plugin" }
+    }
+  },
+  "enabledPlugins": ["nano-banana@nano-banana"]
+}
